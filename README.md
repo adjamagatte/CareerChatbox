@@ -49,7 +49,7 @@ Les modèles GPT d'OpenAI analysent le contenu et génèrent des réponses aux q
 ### 1. **Cloner le Dépôt**
 
 ```bash
-git clone <https://github.com/adjamagatte/CarrerBox.git>
+git clone <https://github.com/adjamagatte/CareerChatbox.git>
 ```
 
 ### 2. **Installer les Dépendances**
@@ -106,11 +106,16 @@ python -m unittest test_utils.py
 
 Cela exécutera tous les tests présents dans le fichier `test_utils.py`. Si vous avez plusieurs fichiers de tests, vous pouvez aussi exécuter tous les tests présents dans un répertoire :
 
-- - -
-Voici la version mise à jour de votre **README**, avec une section ajoutée sur **le choix des outils** et **les méthodes envisagées** pour intégrer les modèles de réponse aux questions sur le fichier :
-
 ---
+## Hebergement
+L'appli a été déployé sur heroku et voici son lien. 
+Du moins pendant qu'il est encore déployé 😄😂
 
+```bash
+https://career-chatbox-2149ec209e2f.herokuapp.com/
+
+```
+---
 ## Choix des Outils
 
 1. **Python** : pour le développement de l'application.
