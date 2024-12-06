@@ -107,6 +107,12 @@ python -m unittest test_utils.py
 Cela exécutera tous les tests présents dans le fichier `test_utils.py`. Si vous avez plusieurs fichiers de tests, vous pouvez aussi exécuter tous les tests présents dans un répertoire :
 
 ---
+## CI/CD
+
+CI/CD avec GitHub Action
+
+
+---
 ## Hebergement
 L'appli a été déployé sur heroku et voici son lien. 
 Du moins pendant qu'il est encore déployé 😄😂
