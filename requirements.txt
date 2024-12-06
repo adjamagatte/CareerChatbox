@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+PyPDF2
+python-docx
+openai
+python-dotenv
+Jinja2
+python-multipart
+unittest

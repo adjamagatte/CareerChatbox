@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire CV</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <h1>Charger votre fichier et Posez vos questions</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% if not uploaded_file_path %}
+            <label for="cv_file">Téléchargez votre fichier :</label>
+            <input type="file" name="cv_file" required>
+        {% else %}
+            <p>Fichier déjà téléchargé : {{ uploaded_file_path }}</p>
+        {% endif %}
+
+        <label for="question">Que voulez-vous savoir :</label>
+        <input type="text" name="question" required>
+
+        <button type="submit">Poser la question</button>
+    </form>
+
+    {% if answer %}
+        <h3>Réponse :</h3>
+        <p>{{ answer }}</p>
+    {% endif %}
+
+    {% if reponse_a_question_suivante != "non" %}
+        <form method="post">
+            <label for="reponse_a_question_suivante">Voulez-vous poser une autre question ?</label>
+            <select name="reponse_a_question_suivante">
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+            <button type="submit">Soumettre</button>
+        </form>
+    {% endif %}
+
+    <footer>
+        <p>&copy; 2024 - Posez vos questions sur ADJA à partir de son CV ou tout autre document</p>
+    </footer>
+
+</body>
+</html>
